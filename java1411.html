@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java1411</title>
+</head>
+
+<body>
+    <script>
+        let quantita_stock = 30;
+
+        let ordine = parseInt(prompt("Inserisci la quantita desiderata"))
+
+        if (quantita_stock - ordine >= 0) {
+            alert("Ordine confermato ")
+        }
+        else {
+            alert("Unita' non disponibili")
+        } </script>
+
+
+
+
+    <script>
+
+        let v = 29
+        if (v < 18) {
+            console.log("Insufficiente")
+        }
+        else if (v >= 18 && v < 21) {
+            console.log("Sufficiente")
+        }
+        else if (v >= 21 && v < 24) {
+            console.log("Buono")
+        }
+        else if (v >= 24 && v < 27) {
+            console.log("Distinto")
+        }
+        else if (v >= 27 && v <= 29) {
+            console.log("Ottimo")
+        }
+
+
+    </script>
+
+    <script>
+
+        let array_1 = [
+            ['un', 'per', 'incatenarli.'],
+            ['Anello', 'trovarli,'],
+            ['ghermirli', 'e'],
+            ['gondor', 'mark'],
+        ];
+        let array_2 = [
+            [['trovarli']],
+            ['tu', 'schiocchi'],
+            ['tu', 'schiocchi', ['padron', 'Sauron']],
+            ['nel', ['fuggite', 'gandalf']],
+            [['domarli,', 'passare'], 'buio']
+        ];
+        console.log(array_1[0][0] + " " + array_1[1][0] + " " + array_1[0][1] + " " + array_2[4][0][0] + " " + array_1[0][0] + " " + array_1[1][0] + " " + array_1[0][1] + " " + array_1[1][1] + " " + array_1[0][0] + " " + array_1[1][0] + " " + array_1[0][1] + " " + array_1[2][0] + " " + array_1[2][1] + " " + array_2[3][0] + " " + array_2[4][1] + " " + array_1[0][2])
+    </script>
+
+
+
+    <script>
+
+
+        let distributore_bibite = [
+            ['coca-cola', 10],
+            ['fanta', 8],
+            ['sprite', 6],
+            ['acqua', 7]];
+
+
+        let ordine1 = parseInt(prompt("Scegli la bibita!\n\nPremi 0 per coca-cola\n\nPremi 1 per fanta\n\nPremi 2 per sprite\n\nPremi 3 per acqua"))
+        let scelta_quantita = prompt("Inserisci la quantita: ")
+
+        switch (ordine1) {
+            case 1:
+
+                if (distributore_bibite[0][0] && distributore_bibite[0][1] - scelta_quantita >= 0) {
+
+
+                    alert("Prendi il prodotto " + distributore_bibite[0][0] + " torni a trovarci")
+
+
+                } else {
+                    alert("Numero prodotti non disponibili")
+                }
+
+                break;
+
+            case 2:
+
+                if (distributore_bibite[1][0] && distributore_bibite[1][1] - scelta_quantita >= 0) {
+
+
+                    alert("Prendi il prodotto " + distributore_bibite[1][0] + " torni a trovarci")
+
+
+                } else {
+                    alert("Numero prodotti non disponibili")
+                }
+
+                break;
+                if (distributore_bibite[2][0] && distributore_bibite[2][1] - scelta_quantita >= 0) {
+
+
+                    alert("Prendi il prodotto " + distributore_bibite[2][0] + " torni a trovarci")
+
+
+                } else {
+                    alert("Numero prodotti non disponibili")
+                }
+
+                break;
+                if (distributore_bibite[3][0] && distributore_bibite[3][1] - scelta_quantita >= 0) {
+
+
+                    alert("Prendi il prodotto " + distributore_bibite[3][0] + " torni a trovarci")
+
+
+                } else {
+                    alert("Numero prodotti non disponibili")
+                }
+
+                break;
+        } </script>
+
+
+
+
+</body>
+
+</html>
